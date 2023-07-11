@@ -321,7 +321,7 @@ jQuery(document).ready(function ($) {
     {
       lng: "en", // set the default language
       backend: {
-        loadPath: '../translations/{{lng}}.json'
+        loadPath: './translations/{{lng}}.json'
       }
     },
     function (err, t) {
