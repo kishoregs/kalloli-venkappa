@@ -9,7 +9,7 @@
 <head>
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 
-    <!-- <base href="https://kishoregs.github.io/kalloli-venkappa/index.html"> -->
+
     <style>
         .ssQIHO-checkbox-menu-item>span>span {
             background-color: #000;
@@ -130,8 +130,6 @@
         .gm-control-active:disabled>img:nth-child(4) {
             display: block
         }
-
-        sentinel {}
     </style>
     <style>
         .gm-style .gm-style-cc a,
@@ -212,8 +210,6 @@
                 background-color: ButtonText
             }
         }
-
-        sentinel {}
     </style>
     <style>
         .gm-style .transit-container {
@@ -766,7 +762,6 @@
         }
     </style>
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -776,7 +771,7 @@
 
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="./css/flaticon.css">
 
     <link rel="stylesheet" href="css/aos.css">
 
@@ -836,31 +831,33 @@
                 <div class="container" style="max-width: 1240px;">
                     <div class="row align-items-center position-relative">
 
-
                         <div class="site-logo">
-                            <a href="#about-section" class="text-black"><span class="text-primary">Kalloli Venkappa</span></a>
+                            <a href="#about-section" class="text-black"><span class="text-primary">Kalloli
+                                    Venkappa</span></a>
                         </div>
 
                         <nav class="site-navigation text-center ml-auto" role="navigation">
 
                             <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                                <!-- <li><a href="#home-section" class="nav-link">Home</a></li> -->
-                                <li><a href="#about-section" class="nav-link active">About</a>
-                                </li>
+                                <!-- Existing menu items -->
+                                <li><a href="#about-section" class="nav-link active">About</a></li>
                                 <li><a href="#donate-section" class="nav-link">Seva</a></li>
-                                <li><a href="#volunteer-registration" class="nav-link">Registration</a>
-                                </li>
+                                <li><a href="#volunteer-registration" class="nav-link">Registration</a></li>
                                 <li><a href="#discover-section" class="nav-link">Direction</a></li>
                                 <li><a href="#daily-Events" class="nav-link">Events</a></li>
                                 <li><a href="#nearby-places" class="nav-link">Nearby</a></li>
-                                <!-- <li><a href="#donate-section" class="nav-link">Sevalist</a></li> -->
-                                <li><a href="#blog-section" class="nav-link">FAQ</a>
-                                </li>
+                                <li><a href="#blog-section" class="nav-link">FAQ</a></li>
                                 <li><a href="#contact-section" class="nav-link">Contact</a></li>
+
+                                <!-- Language switcher -->
+                                <li>
+                                    <select id="language-switcher" class="nav-link">
+                                        <option value="en">English</option>
+                                        <option value="kn">Kannada</option>
+                                    </select>
+                                </li>
                             </ul>
                         </nav>
-
-
 
                         <div class="toggle-button d-inline-block d-lg-none"><a href="#"
                                 class="site-menu-toggle py-5 js-menu-toggle text-black"><span
@@ -871,6 +868,7 @@
 
             </header>
         </div>
+
 
         <div class="owl-carousel slide-one-item">
 
@@ -904,38 +902,8 @@
                         </div>
                         <div class="col-lg-6 ml-auto align-self-lg-center">
                             <h2 class="text-black mb-4 section-title">About</h2>
-                            <p class="text-black">Sri Venkatramana Temple is a significant religious site located in the
-                                village of Kalloli, situated in the Jamkhandi taluk of Bagalkot district, Karnataka,
-                                India. This temple is renowned for its hilltop location and rich history.
-
-                                The temple is dedicated to Lord Vishnu and is visited by devotees seeking various
-                                fulfillments. They come to this temple to seek fame, freedom from diseases, wealth,
-                                courage, relief from adverse effects from bad planetary aspects, and relief from
-                                bondage.
-
-                                The temple is also known for its spiritual significance. Devotees often recite shlokas
-                                or hymns in praise of the deity. Some of the popular shlokas recited include "Vasudeva
-                                Sutham Devam Kamsa Chanoora
-                                Mardhanam Devaki Paramanandham Krishnam Vande Jagathgurum", "Achutham
-                                Keyshavam Rama Narayanam Krishna Damodaram Vasudevam Harim Shridharam Madhavam Gopika
-                                Vallabham Janaki Nayakam Ramachandram Bhajey".</p>
-                            <p class="text-black">The temple is located in an area known as Ramateerth - Kallolli
-                                Venkataramana Temple Road. The local language spoken here is Kannada, along with
-                                Konkani, Telugu, and English. The region is situated at an elevation of 559 meters above
-                                sea level.
-
-                                The temple is accessible by road, with nearby cities including Rabkavi Banhatti, Mudhol,
-                                Mahalingpur, and Terdal. The nearest railway station is more than 10 km away, making
-                                road travel the most convenient way to reach the temple.
-
-                                The region experiences a tropical climate, with temperatures ranging from 23.2°C to
-                                30.6°C. The weather is typically overcast, and the area receives rainfall throughout the
-                                year.
-
-                                The Sri Venkataramana Temple is not just a place of worship but also a significant
-                                cultural and historical landmark in the region. However, detailed historical information
-                                about the temple is not readily available. It is recommended to visit the temple or
-                                contact local authorities or historians for more in-depth historical information.</p>
+                            <p class="text-black" data-i18n="introtext-1"></p>
+                            <p class="text-black" data-i18n="introtext-2"></p>
 
                         </div>
                     </div>
@@ -1151,8 +1119,8 @@
                             <div class="col-md-7 text-center">
                                 <!-- <h2 class="text-black text-uppercase section-title">Seva Form</h2> -->
                                 <div class="row" style="border: 2px solid">
-                                    <iframe src="./src/viewform.html" width="640" height="600" frameborder="2"
-                                        marginheight="0" marginwidth="0">Loading…</iframe>
+                                    <!-- <iframe src="./src/viewform.html" width="640" height="600" frameborder="2"
+                                        marginheight="0" marginwidth="0">Loading…</iframe> -->
                                 </div>
                             </div>
                         </div>
@@ -1160,18 +1128,7 @@
                 </div>
 
             </div>
-            <!-- 
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <div class="row" style="border: 2px solid brown;">
-              <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSdcCOUiJGTyjQaTrQBI7WorkGCmNZ1O9ksK88yamI1Z-Q8xSg/viewform?embedded=true"
-                width="640" height="400" frameborder="2" marginheight="0" marginwidth="0">Loading…</iframe>
-            </div>
-          </div>
-        </div>
-      </div> -->
+
 
         </div>
         <div class="site-section" id="volunteer-registration" style="padding: 0;">
@@ -1202,8 +1159,8 @@
                                         <div class="col-md-7 text-center">
 
                                             <div class="row" style="border: 2px solid">
-                                                <iframe src="./src/viewform(1).html" width="640" height="600"
-                                                    frameborder="2" marginheight="0" marginwidth="0">Loading…</iframe>
+                                                <!-- <iframe src="./src/viewform(1).html" width="640" height="600"
+                                                    frameborder="2" marginheight="0" marginwidth="0">Loading…</iframe> -->
                                             </div>
                                         </div>
                                     </div>
@@ -1237,8 +1194,8 @@
                                         <div class="col-md-7 text-center">
 
                                             <div class="row" style="border: 2px solid">
-                                                <iframe src="./src/viewform(2).html" width="640" height="600"
-                                                    frameborder="2" marginheight="0" marginwidth="0">Loading…</iframe>
+                                                <!-- <iframe src="./src/viewform(2).html" width="640" height="600"
+                                                    frameborder="2" marginheight="0" marginwidth="0">Loading…</iframe> -->
                                             </div>
                                         </div>
                                     </div>
@@ -1997,6 +1954,12 @@
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/jquery.animateNumber.min.js"></script>
         <script src="js/aos.js"></script>
+
+        <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+        <script src="https://unpkg.com/jquery-i18next@latest/dist/umd/jquery-i18next.min.js"></script>
+        <script src="https://unpkg.com/i18next-xhr-backend@latest/dist/umd/i18nextXHRBackend.min.js"></script>
+
+
 
         <script src="js/main.js"></script>
 
