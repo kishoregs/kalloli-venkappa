@@ -10,11 +10,13 @@
 
   "registration-text": "ನೋಂದಣಿ",
 
-  "direction-text": "ನಿರ್ದೇಶನ",
+  "direction-text": "ಮಾರ್ಗ",
 
   "events-text": "ಕಾರ್ಯಕ್ರಮಗಳು",
 
-  "nearby-text": "ಹತ್ತಿರದ",
+  "nearby-text": "ಹತ್ತಿರ",
+
+  "nearby-other-text": "ಹತ್ತಿರದ ಕೆಲವು ದೇವಾಲಯಗಳು",
 
   "faq-text": "ಪ್ರಶ್ನೋತ್ತರ",
   "contact-text": "ಸಂಪರ್ಕಿಸಿ",
@@ -24,6 +26,7 @@
   "volunteer-reg-text": "ಸ್ವಯಂಸೇವಕರ ನೋಂದಣಿ",
 
   "bhajan-reg-text": "ಭಜನ ಲಹರಿ ನೋಂದಣಿ",
+  "devotees-praise": "ಪ್ರಶಂಸೆ",
 
 
 
