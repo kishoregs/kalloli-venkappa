@@ -316,13 +316,12 @@ jQuery(document).ready(function ($) {
   };
   counter();
 
-  i18next.use(i18nextXHRBackend).
-  init(
+  i18next.use(i18nextXHRBackend).init(
     {
       lng: "en", // set the default language
       backend: {
-        loadPath: './translations/{{lng}}.json'
-      }
+        loadPath: "./translations/{{lng}}.json",
+      },
     },
     function (err, t) {
       // initialized and ready to go!
@@ -341,14 +340,16 @@ jQuery(document).ready(function ($) {
     }
   }
 
-  $(document).on('change', '#language-switcher', function() {
+  $(document).on("change", "#language-switcher", function () {
     var language = $(this).val();
-    i18next.changeLanguage(language, function(err, t) {
+    i18next.changeLanguage(language, function (err, t) {
       updateContent();
     });
   });
 
-
+  $(document).on("click", "#mode-switcher", function (e) {
+    e.preventDefault(); // prevent the link from navigating
+    $("body").toggleClass("dark-mode");
+    $(this).find("i").toggleClass("fa-moon fa-sun"); // switch between moon and sun icons
+  });
 });
-
-
